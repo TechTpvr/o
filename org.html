@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پروژه طراحی وب | باشگاه بابایی</title>
+  <style>
+    @font-face {
+      font-family: Vazirmatn;
+      src: local("Vazirmatn");
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; font-family: Vazirmatn, Tahoma, sans-serif;
+      background: linear-gradient(135deg, #e9e7dc, #d6d9d2);
+      color: #222; display: grid; place-items: center; padding: 24px;
+    }
+    .card {
+      width: min(760px, 100%); background: #fff; border-radius: 22px;
+      padding: clamp(24px, 5vw, 48px); box-shadow: 0 18px 55px #0002;
+      border: 1px solid #ffffffb0;
+    }
+    .tag { color: #596c82; font-size: .9rem; font-weight: bold; }
+    h1 { margin: 12px 0; font-size: clamp(1.7rem, 4vw, 2.5rem); }
+    p { line-height: 2; color: #555; }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+    a {
+      text-decoration: none; border-radius: 12px; padding: 13px 22px;
+      font-weight: bold; transition: transform .2s, box-shadow .2s;
+    }
+    a:hover { transform: translateY(-3px); box-shadow: 0 8px 18px #0002; }
+    .preview { background: #1769aa; color: white; }
+    .code { background: #e5e7eb; color: #222; }
+    .hint { background: #f7f5ec; border-right: 4px solid #b4a77a; padding: 12px 16px; margin-top: 24px; border-radius: 8px; }
+    code { direction: ltr; display: inline-block; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="tag">پروژه تمرینی HTML</div>
+    <h1>باشگاه ورزشی بابایی</h1>
+    <p>از این صفحه می‌توانی ظاهر سایت را ببینی یا فایل اصلی <b>index.html</b> را باز کنی و کد آن را بررسی و تمرین کنی.</p>
+    <div class="buttons">
+      <a class="preview" href="index.html" target="_blank">مشاهده ظاهر سایت ←</a>
+      <a class="code" href="index.html">مشاهده فایل کد (index.html)</a>
+    </div>
+    <div class="hint">
+      <b>نکته:</b> تصاویر را داخل پوشه <code>pic/sport/</code> قرار بده. نام فایل‌های پیش‌فرض در کد:
+      <code>s1.jpg</code>، <code>s2.jpg</code> و <code>s4.jpg</code>.
+    </div>
+  </main>
+</body>
+</html>
