@@ -9,51 +9,64 @@
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:khaki;color:#222;font-family:"Vazirmatn",Tahoma,sans-serif;font-size:14px}
-header{min-height:112px;background:#a5a5a5;border:3px solid #efa2a2;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 18px}
+body{margin:0;background:white;color:#222;font-family:"Vazirmatn",Tahoma,sans-serif;font-size:14px}
+header{min-height:150px;background:#a5a5a5;border:3px solid #efa2a2;display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:22px 18px;position:relative}
 .logo{width:76px;height:76px;object-fit:contain;border-radius:50%;background:#ddd}
 .gym-photo{width:94px;height:84px;object-fit:cover;border-radius:24px}
-.site-title{flex:1;text-align:center;font-weight:800;font-size:20px;color:#fff}
-nav{background:#77838a;color:#fff;text-align:center;padding:10px;border:3px solid #efa2a2}
-nav a{color:#fff;text-decoration:none}
-main{margin:8px 0;min-height:245px;background:khaki;border:3px solid #efa2a2;padding:12px;display:flex;gap:14px;align-items:flex-start}
+.site-title{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-weight:800;font-size:24px;color:white}
+nav{background:#77838a;color:white;text-align:center;padding:14px;border:3px solid #efa2a2;font-size:18px}
+nav a{color:white;text-decoration:none}
+main{margin:8px 0;min-height:245px;background:white;border:3px solid #efa2a2;padding:20px;display:flex;gap:14px;align-items:flex-start}
 article{flex:1;min-width:0}
-.description{line-height:2;text-align:justify;margin:0 0 12px}
+.description{line-height:2;text-align:justify;margin:0 0 18px;font-size:16px}
 .side-photo{width:112px;height:94px;object-fit:cover;border-radius:28px;display:block;margin:4px 0 12px}
 .form-area{width:175px;max-width:100%}
 form table{width:100%;border-collapse:collapse;background:#f5f5f5}
-form td{border:1px solid #888;padding:4px;font-size:12px}
-input[type=text],input[type=password]{width:100%;min-width:0;padding:5px;border:1px solid #aaa;font-family:inherit;font-size:12px}
-input[type=submit],input[type=reset]{padding:5px 7px;font-family:inherit;font-size:11px;cursor:pointer}
+form td{border:1px solid #888;padding:6px;font-size:12px}
+input[type=text],input[type=password]{width:100%;min-width:0;padding:8px;border:1px solid #aaa;font-family:inherit;font-size:12px}
+input[type=submit],input[type=reset]{padding:7px 10px;font-family:inherit;font-size:12px;cursor:pointer}
 .lower-photo{width:94px;height:86px;object-fit:cover;border-radius:26px}
-footer{background:#2456c4;color:#fff;padding:12px 16px;text-align:center;border:3px solid #efa2a2}
+footer{background:#2456c4;color:white;padding:16px;text-align:center;border:3px solid #efa2a2;font-size:16px}
 footer a{color:white;text-decoration:none;margin-right:8px}
-@media(max-width:560px){header{flex-wrap:wrap}.site-title{order:3;flex-basis:100%}main{flex-wrap:wrap}article{flex-basis:100%}.form-area{width:100%}.side-photo{width:90px;height:78px}}
+@media(max-width:560px){header{min-height:150px}.site-title{font-size:20px}main{flex-wrap:wrap;padding:14px}article{flex-basis:100%}.form-area{width:100%}.side-photo{width:90px;height:78px}.description{font-size:15px}}
 </style>
 </head>
 <body>
 <header>
-<img class="logo" src="pic/logo.png" alt="لوگوی باشگاه">
-<div class="site-title">باشگاه ورزشی بابایی</div>
-<img class="gym-photo" src="pic/sport/s1.jpg" alt="تصویر باشگاه">
+  <img class="logo" src="pic/logo.png" alt="لوگوی باشگاه">
+  <img class="gym-photo" src="pic/sport/s1.jpg" alt="تصویر باشگاه">
+  <div class="site-title">باشگاه ورزشی بابایی</div>
 </header>
-<nav><a href="index.html">صفحه اصلی باشگاه ورزشی بابایی</a></nav>
-<main>
-<article>
-<p class="description">به باشگاه ورزشی بابایی خوش آمدید. ورزش و فعالیت بدنی منظم به حفظ سلامتی، افزایش انرژی و بهبود آمادگی جسمانی کمک می‌کند. در این باشگاه می‌توانید تمرین‌های ورزشی خود را در محیطی مناسب انجام دهید و برای رسیدن به تناسب اندام و سلامتی بیشتر تلاش کنید.</p>
-<img class="lower-photo" src="pic/sport/s2.jpg" alt="فضای باشگاه">
-</article>
-<aside class="form-area">
-<img class="side-photo" src="pic/sport/s4.jpg" alt="تمرین در باشگاه">
-<form action="#" method="get">
-<table border="1" width="100%">
-<tr><td><label for="name">نام</label></td><td><input id="name" name="name" type="text"></td></tr>
-<tr><td><label for="password">کلمه عبور</label></td><td><input id="password" name="password" type="password"></td></tr>
-<tr><td colspan="2" style="text-align:center"><input type="submit" value="ثبت نام"> <input type="reset" value="پاک کردن"></td></tr>
-</table>
-</form>
-</aside>
+<nav><a href="#home">صفحه اصلی باشگاه ورزشی بابایی</a></nav>
+<main id="home">
+  <article>
+    <p class="description">به باشگاه ورزشی بابایی خوش آمدید. ورزش و فعالیت بدنی منظم به حفظ سلامتی، افزایش انرژی و بهبود آمادگی جسمانی کمک می‌کند. در این باشگاه می‌توانید تمرین‌های ورزشی خود را در محیطی مناسب انجام دهید و برای رسیدن به تناسب اندام و سلامتی بیشتر تلاش کنید.</p>
+    <img class="lower-photo" src="pic/sport/s2.jpg" alt="فضای باشگاه">
+  </article>
+  <aside class="form-area">
+    <img class="side-photo" src="pic/sport/s4.jpg" alt="تمرین در باشگاه">
+    <form action="#" method="get">
+      <table border="1" width="100%">
+        <tr><td><label for="name">نام</label></td><td><input id="name" name="name" type="text"></td></tr>
+        <tr><td><label for="password">کلمه عبور</label></td><td><input id="password" name="password" type="password"></td></tr>
+        <tr><td colspan="2" style="text-align:center"><input type="submit" value="ثبت نام"> <input type="reset" value="پاک کردن"></td></tr>
+      </table>
+    </form>
+  </aside>
 </main>
-<footer>تمامی حقوق سایت محفوظ می‌باشد. | <a href="contact.html">تماس با ما</a></footer>
+<footer>
+  تمامی حقوق سایت محفوظ می‌باشد. |
+  <a href="#contact" onclick="document.getElementById('contact').hidden=false;document.getElementById('home').hidden=true;window.scrollTo(0,0);return false;">تماس با ما</a>
+</footer>
+
+<!-- صفحه تماس داخل همین فایل index.html است؛ فایل جداگانه لازم نیست. -->
+<section id="contact" hidden style="max-width:600px;margin:24px auto;padding:24px;background:white;border:3px solid #efa2a2;text-align:center;font-family:'Vazirmatn',Tahoma,sans-serif">
+  <h2 style="background:#a5a5a5;color:white;padding:20px;margin:0 0 22px">تماس با ما</h2>
+  <p><a href="tel:09924523979" style="color:#2456c4;direction:ltr;display:inline-block">09924523979</a></p>
+  <p><a href="tel:09981842307" style="color:#2456c4;direction:ltr;display:inline-block">09981842307</a></p>
+  <p><a href="tel:0139859726" style="color:#2456c4;direction:ltr;display:inline-block">0139859726</a></p>
+  <p style="font-weight:700">با مدیریت اصغر بابایی</p>
+  <button type="button" style="font-family:inherit;padding:10px 20px" onclick="document.getElementById('contact').hidden=true;document.getElementById('home').hidden=false;window.scrollTo(0,0)">بازگشت به سایت</button>
+</section>
 </body>
 </html>
