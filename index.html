@@ -1,138 +1,59 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>باشگاه ورزشی بابایی</title>
-  <style>
-    /* اگر فونت Vazirmatn روی سیستم نصب باشد، استفاده می‌شود. */
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: khaki;
-      color: #222;
-      font-family: Vazirmatn, Tahoma, Arial, sans-serif;
-      font-size: 14px;
-    }
-    header {
-      min-height: 112px;
-      background: #a9a9a9;
-      border: 3px solid #f2a6a6;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 10px 18px;
-    }
-    .logo {
-      width: 76px; height: 76px; object-fit: contain;
-      border-radius: 50%;
-      background: #ddd;
-    }
-    .gym-photo {
-      width: 94px; height: 84px; object-fit: cover;
-      border-radius: 24px;
-    }
-    .site-title { flex: 1; text-align: center; font-weight: bold; }
-    nav {
-      background: #7e8a91; color: #fff; text-align: center;
-      padding: 9px; border: 3px solid #f2a6a6;
-    }
-    nav a { color: #fff; text-decoration: none; }
-    main {
-      margin: 8px 0;
-      min-height: 245px;
-      background: khaki;
-      border: 3px solid #f2a6a6;
-      padding: 12px;
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-    }
-    article { flex: 1; min-width: 0; }
-    .description { line-height: 1.9; text-align: justify; margin: 0 0 12px; }
-    .side-photo {
-      width: 112px; height: 94px; object-fit: cover;
-      border-radius: 28px;
-      display: block;
-      margin: 4px 0 12px;
-    }
-    .form-area { width: 175px; max-width: 100%; }
-    form table { width: 100%; border-collapse: collapse; background: #f5f5f5; }
-    form td { border: 1px solid #888; padding: 4px; font-size: 12px; }
-    input[type="text"], input[type="password"] {
-      width: 100%; min-width: 0; padding: 4px; border: 1px solid #aaa;
-      font-family: inherit; font-size: 12px;
-    }
-    input[type="submit"], input[type="reset"] {
-      padding: 4px 7px; font-family: inherit; font-size: 11px; cursor: pointer;
-    }
-    .lower-photo { width: 94px; height: 86px; object-fit: cover; border-radius: 26px; }
-    footer {
-      background: #2456c4;
-      color: white;
-      padding: 12px 16px;
-      text-align: center;
-      font-family: Vazirmatn, Tahoma, sans-serif;
-      border: 3px solid #f2a6a6;
-    }
-    @media (max-width: 560px) {
-      header { flex-wrap: wrap; }
-      .site-title { order: 3; flex-basis: 100%; }
-      main { flex-wrap: wrap; }
-      article { flex-basis: 100%; }
-      .form-area { width: 100%; }
-      .side-photo { width: 90px; height: 78px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>باشگاه ورزشی بابایی</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:khaki;color:#222;font-family:"Vazirmatn",Tahoma,sans-serif;font-size:14px}
+header{min-height:112px;background:#a5a5a5;border:3px solid #efa2a2;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 18px}
+.logo{width:76px;height:76px;object-fit:contain;border-radius:50%;background:#ddd}
+.gym-photo{width:94px;height:84px;object-fit:cover;border-radius:24px}
+.site-title{flex:1;text-align:center;font-weight:800;font-size:20px;color:#fff}
+nav{background:#77838a;color:#fff;text-align:center;padding:10px;border:3px solid #efa2a2}
+nav a{color:#fff;text-decoration:none}
+main{margin:8px 0;min-height:245px;background:khaki;border:3px solid #efa2a2;padding:12px;display:flex;gap:14px;align-items:flex-start}
+article{flex:1;min-width:0}
+.description{line-height:2;text-align:justify;margin:0 0 12px}
+.side-photo{width:112px;height:94px;object-fit:cover;border-radius:28px;display:block;margin:4px 0 12px}
+.form-area{width:175px;max-width:100%}
+form table{width:100%;border-collapse:collapse;background:#f5f5f5}
+form td{border:1px solid #888;padding:4px;font-size:12px}
+input[type=text],input[type=password]{width:100%;min-width:0;padding:5px;border:1px solid #aaa;font-family:inherit;font-size:12px}
+input[type=submit],input[type=reset]{padding:5px 7px;font-family:inherit;font-size:11px;cursor:pointer}
+.lower-photo{width:94px;height:86px;object-fit:cover;border-radius:26px}
+footer{background:#2456c4;color:#fff;padding:12px 16px;text-align:center;border:3px solid #efa2a2}
+footer a{color:white;text-decoration:none;margin-right:8px}
+@media(max-width:560px){header{flex-wrap:wrap}.site-title{order:3;flex-basis:100%}main{flex-wrap:wrap}article{flex-basis:100%}.form-area{width:100%}.side-photo{width:90px;height:78px}}
+</style>
 </head>
 <body>
-  <header>
-    <!-- لوگوی باشگاه: تصویر خودتان را با نام logo.png در پوشه pic قرار دهید. -->
-    <img class="logo" src="pic/logo.png" alt="لوگوی باشگاه">
-    <div class="site-title">باشگاه ورزشی بابایی</div>
-    <!-- عکس سمت چپ هدر -->
-    <img class="gym-photo" src="pic/sport/s1.jpg" alt="تصویر باشگاه">
-  </header>
-
-  <nav><a href="index.html">صفحه اصلی باشگاه ورزشی بابایی</a></nav>
-
-  <main>
-    <article>
-      <p class="description">
-        به باشگاه ورزشی بابایی خوش آمدید. ورزش و فعالیت بدنی منظم به حفظ سلامتی،
-        افزایش انرژی و بهبود آمادگی جسمانی کمک می‌کند. در این باشگاه می‌توانید
-        تمرین‌های ورزشی خود را در محیطی مناسب انجام دهید و برای رسیدن به تناسب
-        اندام و سلامتی بیشتر تلاش کنید.
-      </p>
-
-      <!-- تصویر پایین صفحه؛ نام فایل را مطابق پوشه امتحان تنظیم کنید. -->
-      <img class="lower-photo" src="pic/sport/s2.jpg" alt="فضای باشگاه">
-    </article>
-
-    <aside class="form-area">
-      <img class="side-photo" src="pic/sport/s4.jpg" alt="تمرین در باشگاه">
-      <form action="#" method="get">
-        <table border="1" width="100%">
-          <tr>
-            <td><label for="name">نام</label></td>
-            <td><input id="name" name="name" type="text"></td>
-          </tr>
-          <tr>
-            <td><label for="password">کلمه عبور</label></td>
-            <td><input id="password" name="password" type="password"></td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align:center">
-              <input type="submit" value="ثبت نام">
-              <input type="reset" value="پاک کردن">
-            </td>
-          </tr>
-        </table>
-      </form>
-    </aside>
-  </main>
-
-  <footer>تمامی حقوق سایت محفوظ می‌باشد. | تماس با ما</footer>
+<header>
+<img class="logo" src="pic/logo.png" alt="لوگوی باشگاه">
+<div class="site-title">باشگاه ورزشی بابایی</div>
+<img class="gym-photo" src="pic/sport/s1.jpg" alt="تصویر باشگاه">
+</header>
+<nav><a href="index.html">صفحه اصلی باشگاه ورزشی بابایی</a></nav>
+<main>
+<article>
+<p class="description">به باشگاه ورزشی بابایی خوش آمدید. ورزش و فعالیت بدنی منظم به حفظ سلامتی، افزایش انرژی و بهبود آمادگی جسمانی کمک می‌کند. در این باشگاه می‌توانید تمرین‌های ورزشی خود را در محیطی مناسب انجام دهید و برای رسیدن به تناسب اندام و سلامتی بیشتر تلاش کنید.</p>
+<img class="lower-photo" src="pic/sport/s2.jpg" alt="فضای باشگاه">
+</article>
+<aside class="form-area">
+<img class="side-photo" src="pic/sport/s4.jpg" alt="تمرین در باشگاه">
+<form action="#" method="get">
+<table border="1" width="100%">
+<tr><td><label for="name">نام</label></td><td><input id="name" name="name" type="text"></td></tr>
+<tr><td><label for="password">کلمه عبور</label></td><td><input id="password" name="password" type="password"></td></tr>
+<tr><td colspan="2" style="text-align:center"><input type="submit" value="ثبت نام"> <input type="reset" value="پاک کردن"></td></tr>
+</table>
+</form>
+</aside>
+</main>
+<footer>تمامی حقوق سایت محفوظ می‌باشد. | <a href="contact.html">تماس با ما</a></footer>
 </body>
 </html>
